@@ -48,7 +48,10 @@
 	</div>
         <div class="row">
                 <div class="col-md-4 col-md-offset-4 col-xs-12 col-xs-offset-0">
-			<?php echo str_replace('\n','<br>',$output) ?>
+			<br><br><br>
+			<pre>
+				<?php echo $output; ?>
+			</pre>
 		</div>
 	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

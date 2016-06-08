@@ -49,6 +49,12 @@ def main(argv):
 	elem.send_keys(Keys.RETURN)
 	title = driver.title.encode('utf-8')
 	print "Login Success" if title and not title.isspace() else  "Login Failure"
+ 
+        #export page result
+        f = open('respon.html', 'w')
+        f.write(driver.page_source.encode('utf-8'))
+        f.close()
+ 
 
 	#post message
 	#message = raw_input("Post Message: ")
