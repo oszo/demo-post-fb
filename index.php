@@ -50,7 +50,7 @@
                 <div class="col-md-4 col-md-offset-4 col-xs-12 col-xs-offset-0">
 			<br><br><br>
 			<pre>
-				<?php echo $output; ?>
+				<?php echo htmlentities($output); ?>
 			</pre>
 		</div>
 	</div>
